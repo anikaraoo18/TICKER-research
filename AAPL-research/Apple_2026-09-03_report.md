@@ -83,3 +83,12 @@ Before a position decision, the research plan is to model FCFF, test revenue and
 **Watch/Defer. Source: Author judgment - UNSOURCED.**
 
 This call would change if independently supported valuation work showed sufficient upside at the valuation date while Services growth, China/iPhone demand, margins, taxes, and bridge assumptions remained resilient under stress. **Source: Author decision rule - UNSOURCED.**
+
+  This report was written for FIN 43900 (AI Finance Applications, Purdue) as a
+  learning exercise.
+
+  It is not investment research and it is not financial advice.
+
+  AI assistance: drafted with ChatGPT/Codex, resumed from my Lab 03 session;
+  sources gathered and verified by me; the judgments are mine. Any remaining
+  errors are my own.

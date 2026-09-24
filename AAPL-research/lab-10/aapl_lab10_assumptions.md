@@ -82,3 +82,9 @@ Apple has no dealer-style floor-plan financing. Its cash, marketable securities,
 ## Personal filing check
 
 I personally verified Apple’s FY2025 Form 10-K values for total net sales of $416,161 million and inventories of $5,718 million.
+
+## Partner review
+
+**Partner’s challenge:** Why did I assume capital spending equals 3.0% of revenue?
+
+**My response:** Apple’s FY2023–FY2025 reported PP&E acquisition payments were about 2.9%, 2.4%, and 3.1% of revenue. I used 3.0% as a judgment near that recent SEC-reported range; I would change it if Apple’s filings showed a sustained shift in capital-investment needs.

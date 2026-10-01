@@ -1,6 +1,6 @@
 # Apple Lab 12 — Presentation Review
 
-Related work: [Lab 06 DCF inputs](../../AAPL_Lab_06_input_table.md), [Lab 08 peer-comparison sources](../lab-08/lab08_aapl_sources.md), [Lab 10 results](../lab-10/aapl_lab10_results.md), [Lab 10 assumptions](../lab-10/aapl_lab10_assumptions.md), and [Lab 11 notes](../lab-11/aapl_lab11_notes.md).
+Related work: [Lab 06 DCF inputs](../../AAPL_Lab_06_input_table.md), [Apple DCF](../../dcf.py), [Lab 08 P/E model](../lab-08/aapl_pe.py), [Lab 08 P/E sources](../lab-08/lab08_aapl_sources.md), [Lab 10 results](../lab-10/aapl_lab10_results.md), [Lab 10 assumptions](../lab-10/aapl_lab10_assumptions.md), and [Lab 11 notes](../lab-11/aapl_lab11_notes.md).
 
 ## Apple presentation
 

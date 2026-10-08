@@ -1,0 +1,13 @@
+item,required,location_or_url,title,duration_or_as_of,timestamp_index,access_checked,frozen_or_commit_id,notes
+Research-Evolution.pdf,yes,docs/research-evolution-draft.md,Project 1 Research Evolution — Edition B DRAFT,,,,,"Current local Markdown draft; PDF, frozen submission artifact, and access check are incomplete."
+Repository,yes,https://github.com/anikaraoo18/TICKER-research,TICKER-research,,,,3c9d1f17e1d3372b73444e651a49070624004a38,"GitHub URL is from configured origin; GitHub access has not been checked. Existing Apple evidence: https://github.com/anikaraoo18/TICKER-research/blob/main/AAPL_Lab_06_input_table.md ; https://github.com/anikaraoo18/TICKER-research/blob/main/dcf.py ; https://github.com/anikaraoo18/TICKER-research/blob/main/AAPL-research/lab-07/AAPL_Lab_07_comps_calculations.md ; https://github.com/anikaraoo18/TICKER-research/blob/main/AAPL-research/lab-08/aapl_pe.py ; https://github.com/anikaraoo18/TICKER-research/blob/main/AAPL-research/lab-10/aapl_lab10_results.md ; https://github.com/anikaraoo18/TICKER-research/blob/main/AAPL-research/lab-11/aapl_lab11_notes.md ; https://github.com/anikaraoo18/TICKER-research/blob/main/AAPL-research/lab-12/aapl_lab12_review.md"
+Visible executed output,yes,https://github.com/anikaraoo18/TICKER-research/blob/main/AAPL-research/lab-10/aapl_lab10_results.md,Apple Lab 10 — Results,September 23 2026 market-close observation,,,3c9d1f17e1d3372b73444e651a49070624004a38,GitHub access has not been checked; local Lab 11 sensitivity results are also at AAPL-research/lab-11/aapl_lab11_notes.md.
+Decision memo or deck,yes,docs/decision-memo-draft.md,DRAFT — Project 1 Decision Memo: Apple Inc. (AAPL),,,,,"Current local Markdown draft; final memo/deck, frozen artifact, and access check are incomplete."
+Validation-and-AI-Use.pdf,yes,docs/validation-and-ai-use.md,Project 1 — Validation and AI-Use Record,,,,,"Current local Markdown record; PDF, final changed-input record, final AI disclosure, frozen artifact, and access check are incomplete."
+Video 1,yes,,,,,,,INCOMPLETE — no video link title duration timestamp index or access check currently exists.
+Transcript Video 1,yes,,,,,,,INCOMPLETE — no transcript location or access check currently exists.
+Video 2,yes,,,,,,,INCOMPLETE — no video link title duration timestamp index or access check currently exists.
+Transcript Video 2,yes,,,,,,,INCOMPLETE — no transcript location or access check currently exists.
+Video 3,yes,,,,,,,INCOMPLETE — no video link title duration timestamp index or access check currently exists.
+Transcript Video 3,yes,,,,,,,INCOMPLETE — no transcript location or access check currently exists.
+Optional deployed output,no,,,,,,,No deployed output recorded.

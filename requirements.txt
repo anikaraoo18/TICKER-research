@@ -1,0 +1,2 @@
+# No third-party Python packages are required for the relevant Apple scripts.
+# They use only the Python standard library.

@@ -1,0 +1,26 @@
+{
+  "decision_user": "Meridian Foundation investment committee",
+  "decision": "Decide whether to authorize further analysis and a small pilot; not to execute trades today.",
+  "objective": "Seek CPI + 4% net of estimated costs over rolling five-year periods; this is an objective, not a guarantee.",
+  "horizon_years": 7,
+  "benchmark": "60% broad global equities / 40% U.S. investment-grade bonds",
+  "risk_measure": "Unresolved. Before optimization proceeds, the CIO must clarify the enforcement rule for the 10% calendar-year-loss statement and select the optimization tradeoff. No risk-measure convention has been specified.",
+  "constraints": [
+    "Review quarterly and rebalance annually.",
+    "Distribute $750,000 at the end of each calendar quarter.",
+    "Keep at least 12 months of scheduled distributions ($3 million) in cash or daily-liquid government securities.",
+    "Long-only; no borrowing, short sales, or derivatives.",
+    "No single issuer may exceed 8% of the portfolio.",
+    "Annual turnover should not exceed 25% without documented committee approval.",
+    "At least 90% of the portfolio must be redeemable within five business days under ordinary market conditions."
+  ],
+  "validation_tests": [
+    "Compare proposed-policy results with the stated 60/40 benchmark.",
+    "Compare with the cash-reserve-plus-60/40 naïve baseline.",
+    "Test weaker returns, higher inflation, and distribution needs.",
+    "Use a separate historical period from the one used to design assumptions.",
+    "Measure whether estimated trading and implementation costs prevent meeting the net objective.",
+    "Stop or escalate if the approach violates any hard constraint, fails liquidity or distribution requirements, or relies on an undefined interpretation of the 10% loss statement."
+  ],
+  "unresolved_ambiguity": "Before optimization proceeds, the CIO must clarify the 10% calendar-year-loss enforcement rule (absolute rule, probability target, or monitoring threshold with a corrective action) and which tradeoff controls when the return objective, liquidity needs, and loss statement conflict. The investable universe is also not defined."
+}

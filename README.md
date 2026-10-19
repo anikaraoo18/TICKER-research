@@ -9,13 +9,13 @@ is **Watch/Defer**. It is a coursework draft, not investment advice.
 
 ## Setup and run
 
-Use Python 3. From the repository root, run the existing models:
+Python 3 is required. From the repository root, run the existing models:
 
 ```sh
-python dcf.py
-python AAPL-research/lab-08/aapl_pe.py
-python AAPL-research/lab-10/aapl_proforma.py
-python AAPL-research/lab-11/aapl_proforma_sensitivity.py
+python3 dcf.py
+python3 AAPL-research/lab-08/aapl_pe.py
+python3 AAPL-research/lab-10/aapl_proforma.py
+python3 AAPL-research/lab-11/aapl_proforma_sensitivity.py
 ```
 
 The relevant Apple scripts use only the Python standard library. No third-party

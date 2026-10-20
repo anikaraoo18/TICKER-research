@@ -57,7 +57,25 @@ found a CSV parser error from unquoted commas in the copied working manifest;
 that formatting error was corrected before the successful run above. No
 packages were installed.
 
-## README-only partner cold run
+## Technical fresh-environment cold run
+
+- Start/end: October 19, 2026, 2:39:11 PM EDT / October 19, 2026, 2:39:11 PM EDT.
+- Elapsed time: 0.246 seconds.
+- Checkout: a clean temporary local clone at `/private/tmp/ticker-project1-cold-run-python3.4X1dvh`, created from committed revision `909cb199fb3046ba1cf7b57a3729ac7b0de1672c`; no network access or package installation was used.
+- Clean-checkout status before the attempted scripts: clean.
+- Python version in the clean checkout: Python 3.9.6.
+- README commands run: `python3 dcf.py`;
+  `python3 AAPL-research/lab-08/aapl_pe.py`;
+  `python3 AAPL-research/lab-10/aapl_proforma.py`; and
+  `python3 AAPL-research/lab-11/aapl_proforma_sensitivity.py`.
+- First failure: none.
+- Key visible results: the FCFF DCF printed $80.1646 per diluted share and a $65.6625–$103.9522 sensitivity grid; the P/E model printed a $153.38–$236.38 implied range; the Lab 10 pro-forma printed $118.12 per fixed diluted share with FY2026–FY2030 balance-sheet gaps of 0.0 and cash-floor checks true; Lab 11 printed a restored-base match with zero differences and value-per-share spans of $4.19 for Mac growth and $5.66 for gross margin.
+- Result: passed. The original `python` failure was repaired by commit `909cb19`, which changed the README's runnable commands to `python3`; the new fresh-checkout run passed without package installation.
+
+This is a technical temporary-checkout run and is distinct from Lili Alderink's
+earlier README-only run on the project author's computer.
+
+## README-only partner run on the author's computer
 
 - Reviewer: Lili Alderink
 - Date: October 8, 2026

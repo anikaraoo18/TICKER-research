@@ -2,9 +2,8 @@
 
 ## Status
 
-This is a Project 1 completion record. It does not replace the existing lab
-records, and the final changed-input record and AI-tool disclosure remain
-incomplete.
+This record carries forward existing Lab 10 and Lab 11 evidence. It does not
+replace those lab records or claim a newly documented pre-run prediction.
 
 ## Existing Locked Changed-Input Record
 
@@ -22,35 +21,53 @@ Verified details carried forward from that file only:
   of $183,240.4M, FY2030 FCFE of $147,305.4M, and value per fixed diluted share
   of $118.12.
 
-## Final Project 1 Changed-Input Record — [STUDENT TO COMPLETE]
+## Project 1 changed-input evidence
 
 | Required field | Record |
 |---|---|
-| Date and time locked | [STUDENT TO COMPLETE] |
-| Model/version or commit reference | [STUDENT TO COMPLETE] |
-| Base inputs locked | [STUDENT TO COMPLETE] |
-| Inputs changed | [STUDENT TO COMPLETE] |
-| Inputs held constant | [STUDENT TO COMPLETE] |
-| Reason for each change | [STUDENT TO COMPLETE] |
-| Output comparison and validation result | [STUDENT TO COMPLETE] |
+| Date and time locked | September 29, 2026; the Lab 11 record says it was saved before sensitivity analysis. No time is documented. |
+| Model/version or commit reference | Lab 11 sensitivity analysis using the Lab 10 base model; no commit reference is documented. |
+| Base inputs locked | Lab 10 base path: FY2026–FY2030 revenue growth of 4.5%, 4.0%, 3.5%, 3.0%, and 2.5%, with 46.5% gross margin. |
+| Inputs changed | Mac-category revenue-growth path, one driver at a time; gross margin, one driver at a time. |
+| Inputs held constant | For Mac cases, non-Mac revenue growth and 46.5% gross margin remained at base. For margin cases, Mac and non-Mac growth remained at base. |
+| Reason for each change | The documented record tests Mac's contribution to total revenue and tests gross margin because it affects costs and all revenue. |
+| Output comparison and validation result | Mac cases: $116.21–$120.40; margin cases: $115.29–$120.94; restored base exactly reproduced $118.12, FY2030 EBIT of $183,240.4M, and FY2030 FCFE of $147,305.4M. |
 | Student confirmation | [STUDENT TO COMPLETE] |
 
-## AI-tool disclosure — [STUDENT TO COMPLETE]
+The Lab 11 Locked Changed-Input Record is the Project 1 changed-input evidence.
+No separate Project 1 pre-run prediction is claimed or created here.
 
-Do not treat the prior lab’s uncompleted AI comparison table as a completed
-Project 1 disclosure. Record only tools, access paths, prompts/material
-suggestions, validations, and decisions actually used by the student.
+## AI-tool disclosure
+
+Existing records identify Codex and Gemini as tools used after Edition A for
+research organization, source checking, model development, and documentation.
+The Lab 08 peer-screen record further attributes the Garmin and Logitech peer
+suggestions to Codex and Dell and Sony suggestions to Gemini; Dell and Sony were
+excluded for the recorded reasons. No prompt text or exact AI-use date is
+documented.
 
 | Required field | Record |
 |---|---|
-| AI tool(s) and access path(s) actually used | [STUDENT TO COMPLETE] |
-| Date(s) used | [STUDENT TO COMPLETE] |
-| Material suggestion or output | [STUDENT TO COMPLETE] |
-| Independent validation performed | [STUDENT TO COMPLETE] |
-| Accept / modify / reject decision and reason | [STUDENT TO COMPLETE] |
+| AI tool(s) and access path(s) actually used | Codex and Gemini are identified; access paths are not documented. |
+| Date(s) used | Not documented. |
+| Material suggestion or output | Lab 08 records Codex suggestions of Garmin and Logitech and Gemini suggestions of Dell and Sony. |
+| Independent validation performed | The existing record says material Apple 10-K inputs and model outputs were independently checked; the Lab 08 record documents a Logitech hand calculation. Specific AI-by-AI verification actions are not fully documented. |
+| Accept / modify / reject decision and reason | Garmin and Logitech were qualified; Dell and Sony were excluded for the reasons recorded in Lab 08. Other tool-output dispositions are not documented. |
 | Student attestation | [STUDENT TO COMPLETE] |
 
-## Validation follow-up — [STUDENT TO COMPLETE]
+## Limitations and follow-up
 
-- [STUDENT TO COMPLETE: record final reruns and checks actually performed.]
+- The AAPL/GRMN EV/EBITDA script was run with `python3` and completed. It
+  printed the formula and unit checks, Garmin EV/EBITDA of 24.3132x, and an
+  implied AAPL diluted-share value of $230.37. This is a separate single-peer
+  cross-check, not a median or a replacement for the Lab 11 changed-input record.
+- The existing record does not document an exact AI-use date, prompts, or a
+  complete AI-by-AI validation log.
+- A technical fresh-checkout cold run passed on October 19, 2026 using Python
+  3.9.6 and the README's four `python3` commands. It took 0.246 seconds, had no
+  first failure, and displayed passing Lab 10 accounting and Lab 11
+  restored-base checks. The original `python` failure was repaired by the
+  README-only commit `909cb19`, which changed the runnable commands to `python3`.
+- The October 8 README-only run occurred on the project author's computer, so
+  it is distinct from the later successful temporary-checkout run.
 - [STUDENT TO COMPLETE: identify any changes made after the Lab 11 locked record.]

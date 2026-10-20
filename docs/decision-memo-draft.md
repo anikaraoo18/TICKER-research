@@ -1,42 +1,31 @@
-# DRAFT — Project 1 Decision Memo: Apple Inc. (`AAPL`)
+# Project 1 Decision Memo: Apple Inc. (`AAPL`)
 
-**Status:** DRAFT — not investment advice.
+**Decision user:** Investment committee
+**Recommendation:** **Watch/Defer.** Do not initiate from this evidence set; this is not investment advice.
 
-**Decision user:** Investment committee.
+## Evidence and market-price context
 
-**Decision:** **Watch/Defer**; do not treat this draft as a buy or sell recommendation.
+The evidence supports separate method ranges, not a single precise target price or an average. The FCFF DCF and five-year pro-forma/FCFE valuation use different architectures: the former discounts a CFO-less-capex FCFF proxy at WACC and then bridges enterprise value to equity; the latter projects three statements and FCFE before share repurchases, discounted at cost of equity. They are therefore reported side by side, not silently merged.
 
-## Basis for the current working conclusion
-
-The existing Apple record supports Watch/Defer, not a final consolidated
-valuation range. The preserved Edition A identifies September 1, 2026 as its
-valuation date, while the existing valuation exercises use later market
-observations. Those dates and methods require reconciliation before a final
-Project 1 valuation conclusion is stated.
-
-| Method / evidence | Existing result | Stated comparison date or context |
+| Method | Existing valuation evidence | Market-price comparison and exact date |
 |---|---:|---|
-| Lab 06 FCFF DCF | Base: $80.1646 per diluted share; sensitivity corners: $65.6625–$103.9522 | Uses a $315.34 regular-session AAPL close on September 9, 2026. |
-| Lab 07 comparable P/E | $214.53 implied AAPL share price from a 24.63x qualified-peer median P/E | September 9, 2026 market price was $315.34. |
-| Lab 08 two-peer P/E | $153.38–$236.38 implied range | Uses the September 9, 2026 AAPL price of $315.34; it is a separate peer set from Lab 07. |
-| Lab 10 five-year pro forma / FCFE valuation | $118.12 per fixed diluted share | Compared with a $337.02 completed regular-session close on September 23, 2026. |
-| Lab 11 sensitivity | Gross-margin value-per-share span: $5.66; Mac-growth span: $4.19 | Gross margin was the larger driver over the stated ranges. |
+| FCFF DCF sensitivity | $65.6625–$103.9522 per diluted share; base $80.1646 | $315.34 regular-session AAPL close on September 9, 2026. |
+| Five-year pro-forma / FCFE | Base $118.12 per fixed diluted share; one-at-a-time Lab 11 cases span $115.29–$120.94 | $337.02 latest completed regular-session close on September 23, 2026, recorded while the September 24 session was open. |
+| Two-peer P/E | $153.38–$236.38 implied per-share range; median $194.88 | $315.34 AAPL regular-session close on September 9, 2026. |
+| Single-peer EV/EBITDA | Garmin EV/EBITDA 24.3132x; implied AAPL enterprise value $3,519,283.133M, equity value $3,456,560.133M, and diluted-share value $230.37 | Uses the $315.34 AAPL and $272.18 GRMN September 9, 2026 closing-price convention. It is a single-peer cross-check, not a median or target price. |
 
-These figures are reported results from separate existing lab exercises, not a
-single final valuation range. They should not be averaged.
+The P/E and FCFF comparisons use the September 9 price because those exercises were built with that comparison date. The five-year pro-forma record instead uses the latest completed close available while its September 24 review was conducted, September 23. Edition A identifies September 1, 2026 as its valuation date. These are different observations, so price comparisons are not identical dates and should not be presented as if they were.
 
-## Key limitations and next work
+The $115.29–$120.94 figure is the observed low-to-high span across separately run one-at-a-time Mac-growth and gross-margin cases; it is not a probability range. The EV/EBITDA result is a one-peer implied value, not a range. No overall numerical envelope is presented because the methods, assumptions, peer coverage, and observation dates have not been reconciled.
 
-- The Lab 06 FCFF is a CFO-less-capex proxy rather than a fully reconciled FCFF measure.
-- Cash/non-operating-asset policy and the share-count convention require further support.
-- Peer business models, fiscal-year timing, and peer selection limit the P/E comparisons; Lab 07 leaves EV/EBITDA unavailable.
-- The Lab 10 model uses documented simplifying assumptions, including fixed debt, marketable securities, and diluted shares.
-- The Lab 12 review identifies an unmodeled Services downside case and prioritizes Services margin and regulatory research.
-- The existing exercises use different market-observation dates, including September 9 and September 23, 2026, versus the Edition A September 1, 2026 valuation date.
+## Material assumptions and risks
 
-## Recommendation
+- The FCFF starting value is a CFO-less-capex proxy, not a fully reconciled FCFF measure; cash classification, the enterprise-to-equity bridge, and the diluted-share convention require further support.
+- The pro-forma holds marketable securities, debt, debt rate, and diluted shares fixed; it uses a 10.0% cost of equity, 2.5% terminal growth, and a residual cash-repurchase treatment. Terminal value is 70.53% of its base value.
+- P/E comparables use only Garmin and Logitech. Their business models and fiscal-year timing differ from Apple's; peer selection and annual-EPS timing limit comparability.
+- The EV/EBITDA cross-check relies on Garmin alone; its fiscal period, business mix, point-in-time share basis, and cash-only bridge differ from Apple's. It excludes marketable securities under the specified bridge and is not a stand-alone target price.
+- Lab 11 identifies gross margin as the larger tested driver ($5.66 per-share span versus $4.19 for Mac growth). Lab 12 also identifies an unmodeled Services downside, including regulatory exposure around Google search payments.
 
-Maintain **Watch/Defer** while reconciling the valuation date and inputs,
-strengthening the FCFF and enterprise-to-equity bridge, and testing the
-Services downside. A final Project 1 valuation range and any change in decision
-remain [STUDENT TO COMPLETE].
+## Committee action and monitoring triggers
+
+Maintain **Watch/Defer**. Before considering initiation, require a reconciled FCFF build and cash policy, a common valuation-date convention, and a documented Services downside case. Reconsider the recommendation if a reconciled FCFF model materially raises its defensible range, if updated filing evidence changes Services growth or gross-margin support, if regulatory developments impair Services economics, or if the market price moves into a method range after those assumptions and dates are refreshed.

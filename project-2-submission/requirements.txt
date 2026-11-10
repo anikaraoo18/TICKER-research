@@ -1,0 +1,2 @@
+# Third-party dependency imported by portfolio/app.py.
+streamlit

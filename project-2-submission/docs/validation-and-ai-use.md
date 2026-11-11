@@ -11,12 +11,19 @@ streamlit run project-2-submission/portfolio/app.py
 The app accepts an uploaded monthly adjusted-price CSV. The included CSV is the
 documented SGOV/VGIT/VCIT/VTI classroom universe.
 
+Separate-person README-only cold-run evidence is recorded in
+[`partner-cold-run.md`](partner-cold-run.md).
+
 ## Completed checks
 
 - Syntax checks passed for the copied portfolio app and logic.
 - Import checks passed for Streamlit and the local copied `portfolio` module.
 - The app launched successfully after the decision-summary update and was then
   stopped after the launch check.
+- Lili Alderink completed a README-only cold run in a newly downloaded
+  repository copy on Windows with Python 3.11.9. The app was visible; see
+  [`partner-cold-run.md`](partner-cold-run.md) for the reported commands,
+  timing, and evidence limits.
 - After review, the Project 2 interface default reserve eligibility for an
   uploaded SGOV/VGIT/VCIT/VTI CSV was corrected from the prior BIL/IEF default
   to SGOV and VGIT. This interface correction did not change portfolio math,
@@ -57,7 +64,6 @@ No qualifying portfolio—do not allocate; escalate for CIO guidance.
 
 ## Remaining validation work
 
-- A README-only cold run by another person in a fresh folder.
 - A final consistency review across the README, app, memo, video scripts,
   videos, transcripts, and manifest.
 

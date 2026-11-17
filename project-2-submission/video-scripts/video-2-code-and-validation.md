@@ -12,10 +12,12 @@
 **Say this:** “The README is the reproducibility entry point. It identifies the
 Meridian investment committee as the decision user, gives fresh-environment
 setup steps, and runs the Streamlit app with one command. The independent
-README-only cold run by another person is still pending.”
+README-only cold run by my partner was completed and documented; it confirmed
+the README commands worked in the reported environment, without validating
+investment results or authorizing a trade.”
 
 **Show this:** `README.md`, including setup, run command, and the explicit
-cold-run limitation.
+cold-run limitation, then `docs/partner-cold-run.md`.
 
 ## 0:40–1:40 — Data flow and portfolio logic
 
@@ -41,7 +43,20 @@ with a 20-percentage-point largest allocation change.”
 `docs/locked-changed-input-record.md`, and
 `docs/changed-input-execution-result.md`.
 
-## 2:40–3:45 — Downside validation and failure mode
+## 2:40–3:25 — Lab 20 objective validation
+
+**Say this:** “The Lab 20 script reuses the copied estimator and grid-search
+function. With the same all-60-month SGOV, VGIT, VCIT, and VTI data, 5-point
+long-only grid, 3% reserve minimum, and SGOV/VGIT reserve eligibility, it
+changes only the objective from 6.50% to 7.00%. The result moves from 65% SGOV
+and 35% VTI to 60% SGOV and 40% VTI. Expected return rises from 6.62% to
+7.03%, volatility from 5.64% to 6.42%, and reserve-eligible weight from 65%
+to 60%; the largest allocation change is 5 percentage points.”
+
+**Show this:** `portfolio/run_lab20_objective_test.py` and
+`docs/lab-20-objective-test-result.md`.
+
+## 3:25–4:05 — Downside validation and failure mode
 
 **Say this:** “The downside script preserves the 60-month estimates except for
 VTI’s annual expected return, which is overridden to negative 25%. It
@@ -54,13 +69,15 @@ stop condition triggered.”
 `docs/stress-test-plan.md`, and
 `docs/stress-test-execution-result.md`.
 
-## 3:45–5:00 — Integrity and remaining work
+## 4:05–5:00 — Integrity and validation evidence
 
 **Say this:** “The changed-input record and stress plan each have matching
-before-and-after SHA-256 checks in their execution records. The validation
-record also notes that the locked changed-input record has no pre-execution Git
-commit hash; none is added later. Remaining work is the independent cold run
-and final consistency review across submission artifacts.”
+before-and-after SHA-256 checks in their execution records. The Lab 20
+prediction lock also has matching before-and-after SHA-256 checks. The
+validation evidence includes the completed partner cold run and the partner
+code explanation: the script requires the CSV header order to match SGOV,
+VGIT, VCIT, and VTI exactly, so it raises an error rather than silently
+misaligning calculations if the same tickers appear in another order.”
 
 **Show this:** `docs/validation-and-ai-use.md`, including completed checks
-and remaining validation work.
+and `docs/lab-20-partner-explanation.md`.

@@ -27,17 +27,22 @@ reserve-eligible weight, but it misses the 6.5% objective.”
 
 **Show this:** The Lab 14 baselines table in the app.
 
-## 1:35–2:20 — Constrained result and sensitivity
+## 1:35–2:30 — Constrained result and sensitivity
 
 **Say this:** “The 60-month constrained ETF result was 65% SGOV and 35% VTI,
 with 6.62% expected return, 5.64% volatility, and 65% reserve-eligible
 weight. It is conditionally qualifying mechanically, not approved for
 allocation. The locked 36-month comparison shifted to 85% SGOV and 15% VTI.
-The largest allocation change was 20 percentage points.”
+The largest allocation change was 20 percentage points. In Lab 20, changing
+only the objective from 6.50% to 7.00% shifted the 60-month result to 60% SGOV
+and 40% VTI. Expected return changed to 7.03%, volatility to 6.42%, and
+reserve-eligible weight to 60%. The largest allocation change in that test was
+5 percentage points.”
 
-**Show this:** The documented Project 2 results section in the app.
+**Show this:** The documented Project 2 results section in the app, then
+`docs/lab-20-objective-test-result.md`.
 
-## 2:20–3:05 — Downside stop condition
+## 2:30–3:15 — Downside stop condition
 
 **Say this:** “In the locked downside test, VTI’s annual expected return was
 negative 25%, and a 0.25-point annual implementation cost was deducted from
@@ -48,7 +53,7 @@ guidance.’”
 **Show this:** The downside-stress line in the app and
 `docs/stress-test-execution-result.md`.
 
-## 3:05–4:05 — Constraints and provenance
+## 3:15–4:05 — Constraints, provenance, and validation
 
 **Say this:** “This classroom app models the objective, reserve minimum, and
 long-only search. It does not certify the $3 million distribution reserve
@@ -56,9 +61,12 @@ because portfolio value is unknown, issuer cap, turnover, five-business-day
 liquidity, no-derivatives/no-borrowing controls, or the unresolved 10% loss
 rule. The saved price snapshot ends September 2026 and was retrieved October
 22, 2026. Historical estimates are not forecasts, and BAA10YM is quarantined
-from decision inputs.”
+from decision inputs. A partner cold run and a partner code explanation have
+been completed and documented; neither authorizes a trade.”
 
 **Show this:** The mandate-constraint and provenance notices in the app.
+Then show `docs/partner-cold-run.md` and
+`docs/lab-20-partner-explanation.md`.
 
 ## 4:05–5:00 — Committee ask
 

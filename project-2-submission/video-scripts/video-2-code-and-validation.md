@@ -9,12 +9,17 @@
 
 ## 0:00–0:40 — Reproducibility entry point
 
-**Say this:** “The README is the reproducibility entry point. It identifies the
-Meridian investment committee as the decision user, gives fresh-environment
-setup steps, and runs the Streamlit app with one command. The independent
-README-only cold run by my partner was completed and documented; it confirmed
-the README commands worked in the reported environment, without validating
-investment results or authorizing a trade.”
+**Say this:** “Codex helped organize code and documentation, but I selected
+the inputs and scenarios, made the decision, and remain responsible for this
+analysis. This is educational analysis, not investment advice. The README is
+the reproducibility entry point. It identifies the Meridian investment
+committee as the decision user, gives fresh-environment setup steps, and runs
+the Streamlit app with one command. The independent README-only cold run by my
+partner was completed and documented; it confirmed the README commands worked
+in the reported environment, without validating investment results or
+authorizing a trade.”
+
+**Recording instruction:** Keep your webcam visibly on screen throughout.
 
 **Show this:** `README.md`, including setup, run command, and the explicit
 cold-run limitation, then `docs/partner-cold-run.md`.

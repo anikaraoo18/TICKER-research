@@ -19,6 +19,10 @@ from portfolio import (
 
 
 MERIDIAN_RESERVE_TICKERS = {"SGOV", "VGIT"}
+BASE_OBJECTIVE_PERCENT = 6.5
+BASE_RESERVE_PERCENT = 3.0
+DRIVER_MIN_PERCENT = -25.0
+DRIVER_MAX_PERCENT = 25.0
 
 
 def validate_uploaded_csv_shape(csv_text: str) -> None:
@@ -64,7 +68,21 @@ def show_mix(label: str, assets: tuple[str, ...], mix: dict[str, object] | None)
     st.write(f"Reserve-eligible weight: {mix['reserve_eligible_weight']:.2%}")
 
 
-st.set_page_config(page_title="Meridian Lab 15", layout="wide")
+def reset_to_loaded_base_case(
+    assets: tuple[str, ...],
+    expected_returns: dict[str, float],
+    default_reserve_eligible: set[str],
+) -> None:
+    """Restore the app's documented base-case scenario controls."""
+    st.session_state["objective-input"] = BASE_OBJECTIVE_PERCENT
+    st.session_state["reserve-minimum-input"] = BASE_RESERVE_PERCENT
+    st.session_state["use-last-36-months"] = False
+    for asset in assets:
+        st.session_state[f"expected-return-{asset}"] = expected_returns[asset] * 100.0
+        st.session_state[f"reserve-eligible-{asset}"] = asset in default_reserve_eligible
+
+
+st.set_page_config(page_title="Project 2 Portfolio Analysis", layout="wide")
 st.title("Project 2 Portfolio Decision Summary")
 st.caption("Educational portfolio analysis only; not investment advice.")
 
@@ -114,6 +132,10 @@ st.markdown(
     "- **Locked 36-month comparison:** SGOV 85%; VGIT 0%; VCIT 0%; VTI 15%; "
     "7.06% expected return; 1.99% volatility. The largest allocation change "
     "was 20 percentage points.\n"
+    "- **Lab 20 objective comparison:** Raising only the objective from 6.50% "
+    "to 7.00% produced SGOV 60% / VTI 40%; 7.03% expected return; 6.42% "
+    "volatility; and 60% reserve-eligible weight. The largest allocation "
+    "change was 5 percentage points; the defer decision stayed the same.\n"
     "- **Downside stress test:** No qualifying portfolio—do not allocate; "
     "escalate for CIO guidance."
 )
@@ -136,10 +158,15 @@ st.write("Built with AI help, a learning demonstration, not investment advice.")
 
 with st.sidebar:
     st.header("Inputs")
-    objective = st.number_input("Objective (%)", 0.0, 100.0, 6.5, 0.1) / 100.0
-    reserve_minimum = st.number_input("Reserve minimum (%)", 0.0, 100.0, 3.0, 0.1) / 100.0
+    objective = st.number_input(
+        "Objective (%)", 0.0, 15.0, BASE_OBJECTIVE_PERCENT, 0.1, key="objective-input"
+    ) / 100.0
+    reserve_minimum = st.number_input(
+        "Reserve minimum (%)", 0.0, 100.0, BASE_RESERVE_PERCENT, 0.1,
+        key="reserve-minimum-input"
+    ) / 100.0
     uploaded_file = st.file_uploader("Upload prices.csv", type="csv")
-    use_last_36_months = st.toggle("Use last 36 months", value=False)
+    use_last_36_months = st.toggle("Use last 36 months", value=False, key="use-last-36-months")
 
 csv_all_months: dict[str, object] | None = None
 csv_active_months: dict[str, object] | None = None
@@ -168,6 +195,10 @@ active_inputs = csv_active_months or meridian_inputs
 loaded_inputs = csv_all_months or meridian_inputs
 
 st.subheader("Editable expected returns")
+st.caption(
+    "Scenario controls are educational what-if inputs, not forecasts. Expected-return "
+    "drivers are bounded from -25% to 25%; use Reset to return to the documented base case."
+)
 editable_returns: dict[str, float] = {}
 input_columns = st.columns(len(assets))
 for column, asset in zip(input_columns, assets):
@@ -175,8 +206,8 @@ for column, asset in zip(input_columns, assets):
         editable_returns[asset] = (
             st.number_input(
                 asset,
-                min_value=-100.0,
-                max_value=100.0,
+                min_value=DRIVER_MIN_PERCENT,
+                max_value=DRIVER_MAX_PERCENT,
                 value=float(active_inputs["expected_returns"][asset] * 100.0),
                 step=0.1,
                 key=f"expected-return-{asset}",
@@ -198,6 +229,15 @@ eligible_sleeves = {
         key=f"reserve-eligible-{asset}",
     )
 }
+
+default_reserve_eligible = (
+    MERIDIAN_RESERVE_TICKERS if csv_active_months is not None else RESERVE_ELIGIBLE_SLEEVES
+)
+st.button(
+    "Reset to loaded base case",
+    on_click=reset_to_loaded_base_case,
+    args=(assets, active_inputs["expected_returns"], default_reserve_eligible),
+)
 
 selected_mix = find_lowest_volatility_mix(
     assets,

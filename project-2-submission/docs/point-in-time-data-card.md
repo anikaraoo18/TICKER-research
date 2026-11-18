@@ -22,6 +22,19 @@ The universe is SGOV, VGIT, VCIT, and VTI. The saved CSV contains 60 nonblank
 monthly adjusted-price observations, from October 2021 through September 2026,
 with aligned ETF dates.
 
+## Transformations, exclusions, and data handling
+
+The model converts each ticker's oldest-first adjusted-price series into simple
+monthly returns: later price / earlier price - 1. It annualizes the arithmetic
+mean monthly return by multiplying by 12 and annualizes sample standard
+deviation by multiplying by the square root of 12. The resulting expected
+returns, volatilities, and correlations are estimates, not forecasts.
+
+No personal data, credentials, or private datasets are used. Digrin values are
+preserved only as a cited classroom snapshot; this project does not claim
+redistribution rights or a vendor revision guarantee. BAA10YM and the prior
+BIL/IEF/LQD/VT practice universe are excluded from the active decision input.
+
 ## What was known from the saved snapshot
 
 The 60-month historical CSV optimization produced 65.00% SGOV, 0.00% VGIT,

@@ -36,6 +36,11 @@ Separate-person README-only cold-run evidence is recorded in
   `bce879eddb1d7edccdcdd40a09878a26b5cf9e3fe7c1656adca3b1e078d2bd28`.
 - The locked changed-input record does not contain a pre-execution Git commit
   hash. No hash is added or claimed here.
+- Lab 20 supplies the completed commit-before-execution changed-input record:
+  lab-20-prediction.md was committed in 604a50e before the objective test, and
+  lab-20-objective-test-result.md was committed in 8ff296c. Its prediction,
+  old/new values, expected and actual direction, and unchanged decision effect
+  are recorded there.
 - Whitespace checks passed for the Project 2 files created so far.
 
 ## Test results
@@ -61,6 +66,24 @@ percentage-point annual implementation-cost deduction, no candidate met the
 ```text
 No qualifying portfolio—do not allocate; escalate for CIO guidance.
 ```
+
+### Lab 20 objective changed-input test
+
+The human-authored, AI-off Lab 20 prediction raised only the annual net
+objective from 6.50% to 7.00%. It predicted less SGOV, more VTI, higher
+estimated volatility, lower reserve-eligible weight, and an unchanged defer
+decision. The result matched: the 60-month mix moved from SGOV 65% / VTI 35%
+to SGOV 60% / VTI 40%; expected return changed from 6.62% to 7.03%; volatility
+from 5.64% to 6.42%; reserve-eligible weight from 65% to 60%; and the largest
+allocation shift was 5 percentage points. The committee decision remained
+**Do not allocate or rebalance yet.**
+
+### Known-answer and integrity tests
+
+tests/test_portfolio.py checks the published Lab 14 benchmark and equal-weight
+return/volatility/reserve answers, the saved CSV ticker order and 60-observation
+structure, the known 60-month qualifying mix, and the correlation-table
+rejection path. The README gives the command to run it.
 
 ## Remaining validation work
 

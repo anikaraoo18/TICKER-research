@@ -9,11 +9,15 @@
 
 ## 0:00–0:30 — Decision context
 
-**Say this:** “This is an educational Project 2 portfolio-analysis system for
-the Meridian investment committee. My current recommendation is: do not
-allocate or rebalance yet. The process uses a 6.50% objective, a 3.00% reserve
-minimum, and a long-only grid, but the 10% calendar-year loss rule is
-unresolved.”
+**Say this:** “Codex helped organize code and documentation, but I selected
+the inputs and scenarios, made the decision, and remain responsible for this
+analysis. This is educational analysis, not investment advice. This is a
+Project 2 portfolio-analysis system for the Meridian investment committee. My
+current recommendation is: do not allocate or rebalance yet. The process uses
+a 6.50% objective, a 3.00% reserve minimum, and a long-only grid, but the 10%
+calendar-year loss rule is unresolved.”
+
+**Recording instruction:** Keep your webcam visibly on screen throughout.
 
 **Show this:** The mandate and panel-status area in
 `portfolio/app.py` or the opening of `docs/decision-memo.md`.

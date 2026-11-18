@@ -7,12 +7,22 @@
 - **Transcript filename:** ____________________
 - **Captions confirmed:** ____________________
 
-## 0:00–0:45 — Open the live app and lead with the decision
+## 0:00–0:45 — Open the live app, demonstrate one bounded control, and lead with the decision
 
-**Say this:** “I am presenting to the Meridian investment committee. My
-recommendation is: do not allocate or rebalance yet. The proposed-strategy
-allocation range is 0% to 0%. This is a hold/defer decision, not an instruction
-to sell existing assets or a claim about real portfolio holdings.”
+**Say this:** “Codex helped organize code and documentation, but I selected
+the inputs and scenarios, made the decision, and remain responsible for this
+analysis. This is educational analysis, not investment advice. I am presenting
+to the Meridian investment committee. My recommendation is: do not allocate or
+rebalance yet. The proposed-strategy allocation range is 0% to 0%. This is a
+hold/defer decision, not an instruction to sell existing assets or a claim
+about real portfolio holdings. I will now change the bounded objective control
+from 6.50% to 7.00%, show the resulting mix, then reset the app to the loaded
+base case.”
+
+**Recording instruction:** Keep your webcam visibly on screen. Start the app
+with the README command, change Objective from 6.50% to 7.00%, show the changed
+mix, click **Reset to loaded base case**, and then show the top decision-status
+panel.
 
 **Show this:** Open `portfolio/app.py` through the README command, then show
 the top decision-status panel.

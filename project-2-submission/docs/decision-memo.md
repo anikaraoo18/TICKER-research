@@ -1,5 +1,12 @@
 # Project 2 Committee Decision Memo
 
+**AI use and ownership:** Codex helped organize code and documentation. I
+selected the inputs and scenarios, made the decisions, and remain responsible
+for this analysis.
+
+**Educational analysis, not investment advice.** No real trade is authorized
+by this memo.
+
 ## Recommendation
 
 **Do not allocate or rebalance yet.**
@@ -11,8 +18,20 @@ portfolio holdings.
 
 ## Mandate and decision basis
 
-The process uses a 6.50% net objective, a 3.00% reserve minimum, and a
-long-only grid. The 10% calendar-year loss-rule definition remains unresolved.
+- **Intended user and committee ask:** Meridian's investment committee is
+  deciding whether to adopt, allocate to, rebalance, pilot, or reject this
+  process. The current ask is to defer allocation and require additional
+  governance evidence.
+- **Horizon and cadence:** Seven-year policy horizon, quarterly review, and
+  potential annual rebalancing only after unresolved controls are defined and
+  tested.
+- **Modeled rules:** 6.50% net objective, 3.00% reserve minimum, and a
+  long-only 5-percentage-point grid.
+- **Unresolved or not certified in this classroom app:** the $3 million
+  distribution reserve, issuer cap, turnover, five-business-day liquidity,
+  implementation controls, and the 10% calendar-year loss-rule definition.
+- **Scope boundary:** Project 2 is separate from and does not revise Project
+  1 Edition A or Project 1's later work.
 
 | Evidence | Allocation or result | Expected return | Volatility | Reserve-eligible weight | Decision relevance |
 |---|---|---:|---:|---:|---|
@@ -20,6 +39,7 @@ long-only grid. The 10% calendar-year loss-rule definition remains unresolved.
 | Lab 14 Equal weight | 25% in each of the four Lab 14 sleeves | 5.20% | 5.21% | 50.00% | Meets the reserve minimum but misses the 6.5% objective. |
 | 60-month constrained result | SGOV 65%; VGIT 0%; VCIT 0%; VTI 35% | 6.62% | 5.64% | 65.00% | Conditionally qualifying mechanically; not approved for allocation. |
 | Locked 36-month comparison | SGOV 85%; VGIT 0%; VCIT 0%; VTI 15% | 7.06% | 1.99% | 85.00% | The largest allocation change was 20 percentage points. |
+| Lab 20 objective comparison | Raising only the 60-month objective from 6.50% to 7.00% moved the result from SGOV 65% / VTI 35% to SGOV 60% / VTI 40%. | 7.03% | 6.42% | 60.00% | Largest allocation change was 5 percentage points; the defer decision stayed the same. |
 | Downside stress test | No qualifying portfolio—do not allocate; escalate for CIO guidance. | — | — | — | Stop condition triggered; escalation required. |
 
 The human-first lookback prediction was supported: using the most recent 36
@@ -44,6 +64,9 @@ Reconsider this hold/defer decision only with:
 - Confirmation of data provenance.
 - A material change in the objective, reserve requirement, or investable
   universe.
+
+The next committee review should occur when the CIO supplies the loss-rule
+definition, or at the next quarterly policy review, whichever occurs first.
 
 ## Limits
 

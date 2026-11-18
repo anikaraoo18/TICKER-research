@@ -67,10 +67,15 @@ percentage-point annual implementation-cost deduction, no candidate met the
 No qualifying portfolio—do not allocate; escalate for CIO guidance.
 ```
 
+The 0.25-percentage-point cost deduction belongs only to this downside stress
+test. Normal-case expected-return results are historical annualized estimates
+compared directly with the stated hurdle; they are not separately
+cost-adjusted.
+
 ### Lab 20 objective changed-input test
 
-The human-authored, AI-off Lab 20 prediction raised only the annual net
-objective from 6.50% to 7.00%. It predicted less SGOV, more VTI, higher
+The human-authored, AI-off Lab 20 prediction raised only the annual return
+hurdle from 6.50% to 7.00%. It predicted less SGOV, more VTI, higher
 estimated volatility, lower reserve-eligible weight, and an unchanged defer
 decision. The result matched: the 60-month mix moved from SGOV 65% / VTI 35%
 to SGOV 60% / VTI 40%; expected return changed from 6.62% to 7.03%; volatility

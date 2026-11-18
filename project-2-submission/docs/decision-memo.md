@@ -25,8 +25,10 @@ portfolio holdings.
 - **Horizon and cadence:** Seven-year policy horizon, quarterly review, and
   potential annual rebalancing only after unresolved controls are defined and
   tested.
-- **Modeled rules:** 6.50% net objective, 3.00% reserve minimum, and a
-  long-only 5-percentage-point grid.
+- **Modeled rules:** 6.50% annual return hurdle, 3.00% reserve minimum, and a
+  long-only 5-percentage-point grid. Normal-case historical-return output is
+  not separately cost-adjusted; the 0.25-percentage-point cost deduction is
+  used only in the locked downside stress test.
 - **Unresolved or not certified in this classroom app:** the $3 million
   distribution reserve, issuer cap, turnover, five-business-day liquidity,
   implementation controls, and the 10% calendar-year loss-rule definition.
@@ -41,6 +43,11 @@ portfolio holdings.
 | Locked 36-month comparison | SGOV 85%; VGIT 0%; VCIT 0%; VTI 15% | 7.06% | 1.99% | 85.00% | The largest allocation change was 20 percentage points. |
 | Lab 20 objective comparison | Raising only the 60-month objective from 6.50% to 7.00% moved the result from SGOV 65% / VTI 35% to SGOV 60% / VTI 40%. | 7.03% | 6.42% | 60.00% | Largest allocation change was 5 percentage points; the defer decision stayed the same. |
 | Downside stress test | No qualifying portfolio—do not allocate; escalate for CIO guidance. | — | — | — | Stop condition triggered; escalation required. |
+
+The Lab 14 Benchmark and Equal-weight rows are comparative classroom baselines
+using the original four sleeves. They are not allocations in the active
+SGOV/VGIT/VCIT/VTI ETF universe, so they are used to test decision logic rather
+than as directly interchangeable investable portfolios.
 
 The human-first lookback prediction was supported: using the most recent 36
 months increased SGOV and reduced VTI. The resulting 20-percentage-point

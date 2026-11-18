@@ -93,10 +93,16 @@ revision guarantee.
 ## Key limitations
 
 - Historical estimates are not forecasts.
-- The app models a 6.50% net objective, 3.00% reserve minimum, and long-only
-  grid search, but does not certify the $3 million distribution reserve because
+- The app uses a 6.50% annual return hurdle, a 3.00% reserve minimum, and a
+  long-only grid search. Its normal-case historical-return output is not
+  separately cost-adjusted; the 0.25-percentage-point cost deduction appears
+  only in the documented downside stress test. The app does not certify the
+  $3 million distribution reserve because
   portfolio value is unknown; issuer cap; turnover; five-business-day
   liquidity; no-derivatives/no-borrowing implementation controls; or the
   unresolved 10% calendar-year loss-rule definition.
+- The Lab 14 four-sleeve Benchmark and Equal-weight results are comparative
+  classroom baselines, not allocations in the active SGOV/VGIT/VCIT/VTI ETF
+  universe.
 - The allocation changes materially when the historical lookback changes, and
   the locked downside stress test produced no qualifying portfolio.

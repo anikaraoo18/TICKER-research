@@ -88,15 +88,17 @@ st.caption("Educational portfolio analysis only; not investment advice.")
 
 st.subheader("Mandate and current panel status")
 st.markdown(
-    "- **Objective:** 6.50% net annual expected return.\n"
+    "- **Objective:** 6.50% annual return hurdle; normal-case results are not "
+    "separately cost-adjusted.\n"
     "- **Reserve minimum:** 3.00%.\n"
     "- **Process:** long-only grid search in 5-percentage-point steps.\n"
     "- **Unresolved issue:** the 10% calendar-year loss-rule definition is not set."
 )
 st.subheader("Mandate constraint status")
 st.markdown(
-    "- **Modeled:** 6.50% net objective, 3.00% reserve minimum, and a "
-    "long-only search.\n"
+    "- **Modeled:** 6.50% annual return hurdle, 3.00% reserve minimum, and a "
+    "long-only search. The 0.25-percentage-point implementation-cost "
+    "deduction is used only in the downside stress test.\n"
     "- **Not certified by this classroom app:** the $3 million distribution "
     "reserve because portfolio value is unknown; issuer cap; turnover limit; "
     "five-business-day liquidity; no-derivatives/no-borrowing implementation "
@@ -109,6 +111,10 @@ st.error(
 )
 
 st.subheader("Lab 14 baselines")
+st.caption(
+    "These are comparative classroom baselines using the original four sleeves, "
+    "not allocations in the active SGOV/VGIT/VCIT/VTI ETF universe."
+)
 st.markdown(
     "| Baseline | Verified four-sleeve weights | Expected return | Volatility | "
     "Reserve-eligible weight | Mandate verdict |\n"

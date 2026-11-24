@@ -1,7 +1,7 @@
 # Video 1 — System and Thinking
 
 - **Maximum duration:** 3:00
-- **Recording date:** ____________________
+- **Recording date:** November 24, 2026
 - **Duration:** ____________________
 - **Video filename / YouTube URL:** https://youtu.be/-5IsJNDzXG4
 - **Transcript filename:** YouTube automatic captions/transcript available at the video URL; not separately exported.

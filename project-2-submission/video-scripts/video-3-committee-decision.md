@@ -1,8 +1,8 @@
 # Video 3 — Committee Decision
 
 - **Maximum duration:** 5:00
-- **Recording date:** ____________________
-- **Duration:** ____________________
+- **Recording date:** November 24, 2026
+- **Duration:** Approximately 5 minutes
 - **Video filename / YouTube URL:** https://youtu.be/6XToy2aDI2g
 - **Transcript filename:** YouTube automatic captions/transcript available at the video URL; not separately exported.
 - **Captions confirmed:** Available through YouTube automatic captions; not independently corrected.

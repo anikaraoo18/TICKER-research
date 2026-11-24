@@ -16,11 +16,11 @@ actually complete.
 | Changed-input result | https://github.com/anikaraoo18/TICKER-research/blob/main/project-2-submission/docs/lab-20-objective-test-result.md | Ready |
 | Point-in-time data card | https://github.com/anikaraoo18/TICKER-research/blob/main/project-2-submission/docs/point-in-time-data-card.md | Ready |
 | Known-answer tests | https://github.com/anikaraoo18/TICKER-research/blob/main/project-2-submission/tests/test_portfolio.py | Ready |
-| Video 1 YouTube URL | ____________________ | Not yet recorded/uploaded |
+| Video 1 YouTube URL | https://youtu.be/-5IsJNDzXG4 | URL confirmed |
 | Video 1 corrected transcript | ____________________ | Not yet created |
-| Video 2 YouTube URL | ____________________ | Not yet recorded/uploaded |
+| Video 2 YouTube URL | https://youtu.be/NLVmMIjTx7k | URL confirmed |
 | Video 2 corrected transcript | ____________________ | Not yet created |
-| Video 3 YouTube URL | ____________________ | Not yet recorded/uploaded |
+| Video 3 YouTube URL | https://youtu.be/6XToy2aDI2g | URL confirmed |
 | Video 3 corrected transcript | ____________________ | Not yet created |
 | Brightspace receipt / attempt / timestamp | ____________________ | Not yet submitted |
 

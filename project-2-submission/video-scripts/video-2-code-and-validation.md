@@ -3,7 +3,7 @@
 - **Maximum duration:** 5:00
 - **Recording date:** ____________________
 - **Duration:** ____________________
-- **Video filename / YouTube URL:** ____________________
+- **Video filename / YouTube URL:** https://youtu.be/NLVmMIjTx7k
 - **Transcript filename:** ____________________
 - **Captions confirmed:** ____________________
 

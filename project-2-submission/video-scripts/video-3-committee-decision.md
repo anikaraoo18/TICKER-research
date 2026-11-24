@@ -21,11 +21,13 @@ base case.”
 
 **Recording instruction:** Keep your webcam visibly on screen. Start the app
 with the README command, change Objective from 6.50% to 7.00%, show the changed
-mix, click **Reset to loaded base case**, and then show the top decision-status
-panel.
+mix, click **Reset to loaded base case**, then show the top decision-status
+panel, adoption-gate dashboard, and allocation-stability chart.
 
-**Show this:** Open `portfolio/app.py` through the README command, then show
-the top decision-status panel.
+**Show this:** Open `portfolio/app.py` through the README command. Show the
+top decision-status panel, then explain why a green base mechanical-fit gate
+does not outweigh the unresolved stability, downside, governance, and
+provenance gates.
 
 ## 0:45–1:35 — Baseline comparisons
 

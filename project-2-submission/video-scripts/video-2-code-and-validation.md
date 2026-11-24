@@ -61,6 +61,10 @@ to 60%; the largest allocation change is 5 percentage points.”
 **Show this:** `portfolio/run_lab20_objective_test.py` and
 `docs/lab-20-objective-test-result.md`.
 
+**Add while showing the app:** “The adoption-gate dashboard and allocation
+chart display these already documented results. They do not silently rerun the
+model or create a new forecast.”
+
 ## 3:25–4:05 — Downside validation and failure mode
 
 **Say this:** “The downside script preserves the 60-month estimates except for

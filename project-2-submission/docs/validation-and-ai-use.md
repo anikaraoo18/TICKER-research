@@ -42,6 +42,9 @@ Separate-person README-only cold-run evidence is recorded in
   old/new values, expected and actual direction, and unchanged decision effect
   are recorded there.
 - Whitespace checks passed for the Project 2 files created so far.
+- The committee adoption-gate dashboard and allocation-stability chart display
+  documented Project 2 evidence only; they do not create a new optimization,
+  modify a locked record, or add a forecast.
 
 ## Test results
 

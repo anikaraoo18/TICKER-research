@@ -57,7 +57,8 @@ record, commands, timing, and evidence limits are in
 ## Repository map
 
 - `portfolio/app.py` — interactive educational portfolio explorer and
-  Project 2 decision summary.
+  Project 2 decision summary, including a committee adoption-gate dashboard
+  and a chart of the already documented allocation changes.
 - `portfolio/portfolio.py` — copied CSV-estimation and long-only grid-search
   logic.
 - `portfolio/prices.csv` and `portfolio/universe.md` — saved active
@@ -106,3 +107,7 @@ revision guarantee.
   universe.
 - The allocation changes materially when the historical lookback changes, and
   the locked downside stress test produced no qualifying portfolio.
+- The committee adoption-gate dashboard is intentionally a decision aid, not
+  a score, forecast, or additional optimizer. It visualizes existing evidence
+  so the committee can distinguish a base-case mechanical pass from adoption
+  readiness.

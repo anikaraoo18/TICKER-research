@@ -24,6 +24,21 @@ BASE_RESERVE_PERCENT = 3.0
 DRIVER_MIN_PERCENT = -25.0
 DRIVER_MAX_PERCENT = 25.0
 
+DOCUMENTED_ALLOCATION_ROWS = [
+    {"Scenario": "60-month base", "Asset": "SGOV", "Weight": 65.0},
+    {"Scenario": "60-month base", "Asset": "VGIT", "Weight": 0.0},
+    {"Scenario": "60-month base", "Asset": "VCIT", "Weight": 0.0},
+    {"Scenario": "60-month base", "Asset": "VTI", "Weight": 35.0},
+    {"Scenario": "36-month lookback", "Asset": "SGOV", "Weight": 85.0},
+    {"Scenario": "36-month lookback", "Asset": "VGIT", "Weight": 0.0},
+    {"Scenario": "36-month lookback", "Asset": "VCIT", "Weight": 0.0},
+    {"Scenario": "36-month lookback", "Asset": "VTI", "Weight": 15.0},
+    {"Scenario": "7.00% objective", "Asset": "SGOV", "Weight": 60.0},
+    {"Scenario": "7.00% objective", "Asset": "VGIT", "Weight": 0.0},
+    {"Scenario": "7.00% objective", "Asset": "VCIT", "Weight": 0.0},
+    {"Scenario": "7.00% objective", "Asset": "VTI", "Weight": 40.0},
+]
+
 
 def validate_uploaded_csv_shape(csv_text: str) -> None:
     """Reject malformed CSV rows before estimating portfolio inputs."""
@@ -108,6 +123,55 @@ st.error(
     "**Do not allocate or rebalance yet.** The 10% loss rule is unresolved, "
     "the allocation is sensitive to the historical lookback window, and the "
     "locked downside stress test produced no qualifying portfolio."
+)
+
+st.subheader("Committee adoption gates")
+st.caption(
+    "This is a governance view of documented evidence, not a new score or a new optimization. "
+    "A mechanically qualifying base-case mix alone cannot authorize a trade."
+)
+st.markdown(
+    "| Adoption gate | Current evidence | Status | Committee implication |\n"
+    "|---|---|---|---|\n"
+    "| Base mechanical fit | 60-month result meets the modeled 6.50% hurdle and 3.00% reserve minimum. | Met | Necessary, but not sufficient for adoption. |\n"
+    "| Allocation stability | Changing only the lookback moved the allocation by 20 percentage points. | Unresolved | Do not treat one historical window as a durable instruction. |\n"
+    "| Downside resilience | Locked -25% VTI stress test produced no qualifying portfolio. | Not met | Stop condition: do not allocate; escalate. |\n"
+    "| Governance | The 10% calendar-year loss rule has no defined enforcement convention. | Unresolved | CIO clarification is required before adoption. |\n"
+    "| Point-in-time provenance | Saved snapshot is documented, but unrevised historical availability is not proven. | Needs confirmation | Keep BAA10YM quarantined and confirm data governance. |"
+)
+
+st.subheader("Allocation stability across documented scenarios")
+st.caption(
+    "These are already recorded Project 2 results. The chart does not run a new optimization or "
+    "forecast returns; it makes the documented allocation changes visible for committee review."
+)
+st.vega_lite_chart(
+    DOCUMENTED_ALLOCATION_ROWS,
+    {
+        "mark": {"type": "bar"},
+        "encoding": {
+            "y": {
+                "field": "Scenario",
+                "type": "nominal",
+                "sort": ["60-month base", "36-month lookback", "7.00% objective"],
+                "title": None,
+            },
+            "x": {
+                "field": "Weight",
+                "type": "quantitative",
+                "stack": "zero",
+                "scale": {"domain": [0, 100]},
+                "axis": {"title": "Portfolio weight (%)", "format": ".0f"},
+            },
+            "color": {"field": "Asset", "type": "nominal", "title": "ETF sleeve"},
+            "tooltip": [
+                {"field": "Scenario", "type": "nominal"},
+                {"field": "Asset", "type": "nominal"},
+                {"field": "Weight", "type": "quantitative", "format": ".2f", "title": "Weight (%)"},
+            ],
+        },
+    },
+    use_container_width=True,
 )
 
 st.subheader("Lab 14 baselines")

@@ -49,6 +49,16 @@ using the original four sleeves. They are not allocations in the active
 SGOV/VGIT/VCIT/VTI ETF universe, so they are used to test decision logic rather
 than as directly interchangeable investable portfolios.
 
+## Committee adoption gates
+
+I added a decision-gate view to prevent a mechanically qualifying optimizer
+output from being mistaken for a trade instruction. The base case clears the
+modeled return and reserve hurdles, but four independent adoption gates remain
+open: allocation stability, downside resilience, loss-rule governance, and
+point-in-time data confirmation. The 20-percentage-point lookback shift and
+the no-qualifier downside result are the decisive reasons that the base result
+does not authorize allocation.
+
 The human-first lookback prediction was supported: using the most recent 36
 months increased SGOV and reduced VTI. The resulting 20-percentage-point
 largest allocation shift demonstrates material sensitivity to the selected

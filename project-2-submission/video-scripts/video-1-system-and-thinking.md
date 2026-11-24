@@ -15,12 +15,14 @@ analysis. This is educational analysis, not investment advice. This is a
 Project 2 portfolio-analysis system for the Meridian investment committee. My
 current recommendation is: do not allocate or rebalance yet. The process uses
 a 6.50% objective, a 3.00% reserve minimum, and a long-only grid, but the 10%
-calendar-year loss rule is unresolved.”
+calendar-year loss rule is unresolved. I designed the committee adoption-gate
+view so a mechanically qualifying base-case mix cannot be confused with an
+approved trade.”
 
 **Recording instruction:** Keep your webcam visibly on screen throughout.
 
-**Show this:** The mandate and panel-status area in
-`portfolio/app.py` or the opening of `docs/decision-memo.md`.
+**Show this:** The mandate, decision-status, and committee adoption-gate areas
+in `portfolio/app.py`.
 
 ## 0:30–1:05 — Original result and locked prediction
 

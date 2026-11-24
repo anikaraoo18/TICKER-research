@@ -4,8 +4,8 @@
 - **Recording date:** ____________________
 - **Duration:** ____________________
 - **Video filename / YouTube URL:** https://youtu.be/6XToy2aDI2g
-- **Transcript filename:** ____________________
-- **Captions confirmed:** ____________________
+- **Transcript filename:** YouTube automatic captions/transcript available at the video URL; not separately exported.
+- **Captions confirmed:** Available through YouTube automatic captions; not independently corrected.
 
 ## 0:00–0:45 — Open the live app, demonstrate one bounded control, and lead with the decision
 
